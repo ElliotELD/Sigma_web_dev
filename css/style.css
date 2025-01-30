@@ -1,0 +1,36 @@
+p {
+    background-color: rebeccapurple;
+    color: red;
+    /* font-family: poppins; */
+}
+
+/* child selector */
+
+p>span {
+    background-color: red;
+}
+
+/* descendant selector
+ */
+p span {
+    color: whitesmoke;
+}
+
+/* universal selectors */
+* {
+    font-family: poppins;
+}
+
+p:hover {
+    background-color: olivedrab;
+
+}
+
+/* pseudo selectors */
+a:visited {
+    color: brown;
+}
+
+a:active {
+    background-color: orange;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      header {
+        position: sticky;
+        top: 0;
+      }
+      nav {
+        background-color: rebeccapurple;
+      }
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        padding: 10px 40px;
+        gap: 20px;
+      }
+
+      .hero-container {
+        background-color: red;
+        /* width: 100%; */
+        height: 90vh;
+        padding: 40px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .hero-left-box {
+        width: 400px;
+        background-color: darkblue;
+        height: 200px;
+      }
+      .hero-right-box {
+        width: 400px;
+        background-color: darkviolet;
+        height: 200px;
+      }
+      .welcome {
+        background-color: darkgoldenrod;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+      }
+      .foot {
+        background-color: rgb(11, 184, 31);
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .fix-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: teal;
+        position: fixed;
+        top: 590px;
+        left: 1400px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>Services</li>
+          <li><a href="#"></a>Blog</li>
+          <li><a href="#"></a>Community</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="hero-container">
+        <div class="hero-left-box">hi</div>
+        <div class="hero-right-box">hello there iam elliot</div>
+      </div>
+    </section>
+    <section>
+      <div class="welcome">
+        <h2>Welcome to frontend web dev</h2>
+      </div>
+    </section>
+    <footer>
+      <div class="foot">
+        <h3>Footer</h3>
+      </div>
+    </footer>
+    <div class="fix-icon"></div>
+  </body>
+</html>

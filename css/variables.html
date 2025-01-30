@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+/* global variables */
+        :root{
+            --backcolor:rgb(62, 59, 59);
+            --textcolor:#fff;
+        }
+        nav{
+            background-color: var(--backcolor);
+            padding: 20px;
+            color: var(--textcolor);
+        }
+        nav ul{
+            display: flex;
+            padding: 10px;
+            gap: 20px;
+        }
+        li:first-child{
+            /* --backcolor:red; */
+            /* background-color: aqua; */
+            background-color: var(--backcolor , black);
+        }
+        main{
+            background-color: var(--backcolor);
+            color: var(--textcolor);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>more</li>
+            <li>about</li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Main content or hero content</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate debitis facilis eum quaerat, consequuntur dolorum temporibus totam placeat molestias sint eveniet esse modi distinctio recusandae numquam asperiores alias excepturi illo.</p>
+    </main>
+</body>
+</html>

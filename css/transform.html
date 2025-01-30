@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css trasnform</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        background-color: rebeccapurple;
+        height: 500px;
+        border: 5px solid blue;
+      }
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: darkgray;
+        border: 2px solid black;
+
+        /* Transform  property 👨‍💻 */
+        /* transform: rotate(90deg); */
+        /* transform: rotate(1turn); */
+        /* transform: rotate(0.1turn); */
+        /* transform: rotateX(90deg); */
+        /* transform: rotateX(80deg); */
+        /* transform: rotateY(50deg); */
+        /* transform: rotateZ(50deg); */
+        /* scale:2; */
+        /* transform: scaleX(3); */
+        /* transform: skew(50deg); */
+        /* transform: skewX(40deg); */
+        /* transform: translateY(100px) skew(10deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Dev</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        border: 2px solid red;
+        display: grid;
+        grid-template-areas:
+          "nav nav nav"
+          "main em side"
+          "footer footer footer";
+      }
+      .item {
+        /* width: 70px; */
+        height: 70px;
+        border: 1px solid green;
+      }
+      .item-1 {
+        grid-area: nav;
+      }
+      .item-2 {
+        grid-area: main;
+      }
+      .item-3 {
+        grid-area: em;
+      }
+      .item-4 {
+        grid-area: side;
+      }
+      .item-5 {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">nav</div>
+      <div class="item item-2">main</div>
+      <div class="item item-3">em</div>
+      <div class="item item-4">side</div>
+      <div class="item item-5">footer</div>
+    </div>
+  </body>
+</html>

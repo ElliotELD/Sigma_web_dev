@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounce</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container-bg {
+        position: relative;
+        background-color: darkblue;
+
+        height: 80vh;
+      }
+      .ball {
+        position: absolute;
+        /* top: 0; */
+        bottom: 0;
+        background-color: teal;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+      }
+      /* animation */
+      .ball-animate {
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: ball-animate 3s alternate 1ms ease-in-out; */
+        animation: ball-animate 5s ease-in-out 1ms alternate;
+      }
+      @keyframes ball-animate {
+        0% {
+          transform: translateY(-100px);
+        }
+        20% {
+          /* transform: translateY(100px) skew(10deg); */
+          transform: translate(200px);
+          /* transform: translateY(-50px); */
+        }
+        40% {
+          transform: translateY(-300px);
+        }
+        60% {
+          transform: translate(400px);
+        }
+        80% {
+          transform: translate(500px);
+        }
+        100% {
+          transform: translate(600px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-bg">
+      <div class="ball ball-animate"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .container {
+        height: 80vh;
+        width: 30vw;
+        background-color: lightcoral;
+      }
+      .box {
+        height: 5vh;
+        width: 5vw;
+        background-color: darkblue;
+        color: #fff;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: myFirstAnimation; */
+        /* animation-duration: 1s; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-iteration-count: infinite; */
+        /* animation-fill-mode: backwards; */
+        /* animation-direction: alternate; */
+
+        /* animation: myFirstAnimation 2s ease infinite alternate; */
+      }
+
+      /* using from and to 👨‍💻 */
+      @keyframes myFirstAnimation {
+        from {
+          background-color: red;
+        }
+        to {
+          transform: translateX(100px);
+        }
+      }
+
+      .box {
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: secAnimation 1s ease-in-out infinite alternate-reverse; */
+      }
+
+      /* using 0%  to 100% 👨‍💻 */
+      @keyframes secAnimation {
+        0% {
+          background-color: rebeccapurple;
+        }
+        50% {
+          background-color: red;
+          transform: translateX(100px);
+        }
+        100% {
+          background-color: papayawhip;
+          /* transform: translateX(-100px); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

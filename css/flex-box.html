@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        border: 5px solid gray;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* justify-content: space-around; */
+        /* align-content: center; */
+        flex-wrap: wrap;
+        gap: 10px 40px;
+      }
+
+      .items {
+        background-color: teal;
+        /* flex-grow: 1; */
+        border: 2px solid rebeccapurple;
+        width: 100px;
+        height: 100px;
+        /* margin: 10px; */
+        padding: 10px;
+      }
+      .g-3 {
+        flex-shrink: 5;
+      }
+      /* .g-3 {
+        flex-grow: 3;
+      } */
+      /* .order1 {
+        order: 100;
+      }
+
+      .order2 {
+        order: 50;
+      }
+
+      .order3 {
+        order: 3;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items g-3"><p>item 1</p></div>
+      <div class="items"><p>item 2</p></div>
+      <div class="items"><p>item 3</p></div>
+    </div>
+  </body>
+</html>

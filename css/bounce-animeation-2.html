@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        background-color: darkcyan;
+        height: 60vh;
+        position: relative;
+      }
+      .ball {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rebeccapurple;
+        bottom: 0;
+        position: absolute;
+        /* animation: bounceX 2s linear infinite; */
+        animation: bounceY 1s ease-in infinite alternate,
+          bounceX 2s linear infinite;
+      }
+      @keyframes bounceX {
+        0% {
+          background-color: lightcoral;
+          left: 0;
+        }
+        100% {
+          background-color: lightblue;
+          left: 100%;
+        }
+      }
+      @keyframes bounceY {
+        0% {
+          background-color: lightcoral;
+          bottom: 0;
+        }
+        100% {
+          background-color: lightblue;
+
+          bottom: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>

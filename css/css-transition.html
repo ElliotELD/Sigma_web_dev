@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        background-color: lightblue;
+        height: 60vh;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: darkgoldenrod;
+      }
+      .box {
+        transition: all ease-in-out 1s;
+        /* transition-property: transform; */
+        /* transition-duration: 0.5s; */
+        /* transition-timing-function: ease-in; */
+        /* transition-delay: 1s; */
+      }
+      .move-me {
+        transform: translate(100px);
+        background-color: red;
+        transform: scale(2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box move-me"></div>
+    </div>
+  </body>
+</html>

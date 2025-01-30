@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONTS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Permanent+Marker&family=Playwrite+IE+Guides&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: "Geist", serif; */
+            font-family: "Permanent Marker", serif;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        html{
+          scroll-behavior:smooth;
+        }
+        .container{
+            /* font-family:  Calibri; */
+            width: 300px;
+            background-color: lightblue;
+            /* font */
+        }
+
+        /* child selector */
+
+        /* .container > p{
+            color: red;
+        } */
+        .container  p{
+            color: red;
+            line-height: 1.2;
+            
+        }
+        h1{
+            text-transform:uppercase;
+            text-decoration: color( red);
+            text-align: center;
+        }
+        .text-box{
+            border: 2px solid royalblue;
+            width: 200px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            word-break:break-all;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            this is container
+        </h1>
+        <p class="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maxime obcaecati quidem atque facere dolore rerum quasi architecto accusantium placeat voluptatem est sapiente sunt maiores enim quis, facilis recusandae magnam?
+        </p>
+    </div>
+</body>
+</html>
