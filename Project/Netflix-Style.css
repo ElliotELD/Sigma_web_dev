@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+
+
+    height: 80vh;
+    position: relative;
+}
+
+.main .box-black {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    height: 50px;
+    margin: auto;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav span img {
+    width: 100px;
+    z-index: 10;
+    position: relative;
+    /* background-color: red; */
+    fill: red;
+}
+
+/* this will work */
+svg {
+    fill: blue;
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+
+}
+
+.hero {
+    width: 100%;
+    height: calc(100% - 50px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+    text-align: center;
+
+
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero> :nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.separation {
+    height: 7px;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.btn {
+    /* all: unset; */
+    /* background-color: red; */
+    padding: 5px 8px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: #fff;
+    font-weight: 700;
+}
+
+.input-email {
+    /* padding: 5px 5px; */
+    padding: 10px 30px 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #1c1b1be6;
+    border-color: gray;
+    border: 1px solid gray;
+    color: #fff;
+
+}
+
+.email-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-red {
+    all: unset;
+    background-color: red;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+
+
+}
+
+.first {
+    color: #fff;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.text-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.text-content :nth-child(1) {
+    /* background-color: rebeccapurple; */
+    font-size: 48px;
+}
+
+.text-content :nth-child(2) {
+    /* background-color: rosybrown; */
+    font-size: 24px;
+}
+
+.visuals {
+    background-color: rgba(66, 48, 83, 0.642);
+    width: 100%;
+    height: 500px;
+    margin: 15px 0;
+}
+
+.faq {
+    color: #fff;
+
+}
+
+.faq h2 {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.q-box {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgb(40, 39, 39);
+    width: 50vw;
+    margin: 10px auto;
+    padding: 20px;
+    transition: all ease .5s;
+}
+
+.q-box:hover {
+    background-color: rgba(128, 128, 128, 0.436);
+}
+
+.readyToWatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    margin: 20px 0;
+
+}
+
+.readyToWatch p {
+    text-align: center;
+}
+
+footer {
+    width: 60vw;
+    margin: 20px auto;
+    /* background-color: red; */
+    color: gray;
+
+}
+
+footer>span {
+    padding: 20px;
+}
+
+.foot-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foot-box- a {
+    color: gray;
+}
+
+.flexfoot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer button {
+    margin-left: 20px;
+}
+
+.net-in {
+    margin: 20px;
+
+}
